@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top left, #3a0a20 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #26091a 0%, transparent 35%),
+        #09090b;
+
+    color: #ffffff;
+}
+
+.container {
+    width: 100%;
+    max-width: 440px;
+    padding: 20px;
+}
+
+.card {
+    background: #121216;
+    border: 1px solid #292930;
+    border-radius: 20px;
+    padding: 38px;
+
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.5),
+        0 0 30px rgba(204, 20, 92, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+.subtitle {
+    text-align: center;
+    color: #9d9da7;
+    font-size: 14px;
+    margin-bottom: 28px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tab {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #303038;
+    border-radius: 10px;
+    background: #1c1c22;
+    color: #bcbcc5;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    background: #25252c;
+}
+
+.tab.active {
+    background: #cc145c;
+    border-color: #cc145c;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+label {
+    color: #c7c7ce;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 14px;
+    background: #1a1a20;
+    color: white;
+    border: 1px solid #303038;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+}
+
+input::placeholder {
+    color: #696973;
+}
+
+input:focus {
+    border-color: #cc145c;
+    box-shadow: 0 0 0 3px rgba(204, 20, 92, 0.12);
+}
+
+#submitBtn {
+    margin-top: 7px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+
+    background: #cc145c;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+#submitBtn:hover {
+    background: #e01868;
+    transform: translateY(-1px);
+}
+
+#message {
+    min-height: 20px;
+    margin-top: 18px;
+    text-align: center;
+    color: #d6d6dc;
+    font-size: 13px;
+}
+
+.footer {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #292930;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 12px;
+    color: #777781;
+}
+
+.footer a {
+    color: #e01868;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}

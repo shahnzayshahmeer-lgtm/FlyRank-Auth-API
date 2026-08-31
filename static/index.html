@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlyRank Auth API</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>FlyRank Auth</h1>
+      <p class="subtitle">Secure authentication with FastAPI & Supabase</p>
+
+      <div class="tabs">
+        <button class="tab active" onclick="showLogin()">Login</button>
+        <button class="tab" onclick="showSignup()">Sign Up</button>
+      </div>
+
+      <form id="authForm">
+        <input
+          type="email"
+          id="email"
+          placeholder="Email address"
+          required
+        />
+
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required
+        />
+
+        <button type="submit" id="submitBtn">Login</button>
+      </form>
+
+      <p id="message"></p>
+
+      <div class="links">
+        <a href="/docs" target="_blank">Open Swagger UI</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
